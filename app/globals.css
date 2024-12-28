@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* globals.css */
+
+@font-face {
+  font-family: "Satoshi-Black";
+  src: url("../Fonts/OTF/Satoshi-Light.otf") format("opentype");
+  font-weight: 100px; /* Adjust font weight as per your font file */
+  /* font-style: normal; */
+  /* Adjust font style as per your font file */
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Define other font weights and styles as needed */
+
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+/* body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
+
+/* @layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+} */
+/* Specific styles for the tab component */
+.tab-content {
+  display: block;
+  border: none;
+}
+
+.tab-content.active {
+  display: block;
+  border: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; 
+}
+
+.scrollbar-hide {
+  scrollbar-width: none; 
+}
+
+
+.slide-in {
+  font-size: 2rem;
+  font-weight: bold;
+  opacity: 0;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+/* Sliding in from the left */
+.slide-left {
+  transform: translateX(-100%);
+  animation-name: slideFromLeft;
+}
+
+/* Sliding in from the right */
+.slide-right {
+  transform: translateX(100%);
+  animation-name: slideFromRight;
+}
+
+/* Keyframes for sliding in from the left */
+@keyframes slideFromLeft {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Keyframes for sliding in from the right */
+@keyframes slideFromRight {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

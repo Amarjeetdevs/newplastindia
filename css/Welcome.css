@@ -1,0 +1,23 @@
+#wlcmfontbig {
+/* Preview */
+
+
+
+font-family:'';
+font-style: normal;
+font-weight: 700;
+font-size: 144px;
+line-height: 120%;
+/* or 173px */
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+}
